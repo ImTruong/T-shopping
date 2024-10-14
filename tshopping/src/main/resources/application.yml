@@ -1,0 +1,24 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  application:
+    name: tshopping
+  datasource:
+    url: jdbc:mysql://localhost:3306/t_shopping
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      enabled: true
+file:
+  rootPath: files
+jwt:
+  secretKey: LNdN7z+1oWGm5KoABLZdz+A6olr5FbvGHjaex+y0Wm0=
